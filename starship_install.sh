@@ -14,7 +14,7 @@ fc-cache -f
 sleep 5
 echo "Deleting temporary directory"
 rm -r ~/.fontstmp123456789
-echo "NerdFont FiraCode installation complete"
+echo "NerdFont FiraCode installation complete!"
 elif ["$answer" -eq "y"]
 then
 echo "Continuing installation..."
@@ -23,7 +23,9 @@ exit
 fi
 
 #installing starship
+echo "Installing Starship"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 sed -i -e'$aeval \"$(starship init zsh)\"' ~/.zshrc
+echo "Installation complete!"
 
 exit
