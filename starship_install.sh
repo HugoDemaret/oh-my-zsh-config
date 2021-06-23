@@ -25,7 +25,7 @@ fi
 #installing starship
 echo "Installing Starship"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-sed -i -e'$aeval \"$(starship init zsh)\"' ~/.zshrc
+sed -i -e'$aeval "$(starship init zsh)"' ~/.zshrc
 echo "Installation complete!"
 
 exit
