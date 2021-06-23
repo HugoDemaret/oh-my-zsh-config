@@ -12,7 +12,7 @@ unzip FiraCode.zip
 mv *.ttf *.otf /usr/share/fonts/
 fc-cache -f
 sleep 5
-echo "Deleting temporaty directory"
+echo "Deleting temporary directory"
 rm -r ~/.fontstmp123456789
 echo "NerdFont FiraCode installation complete"
 elif ["$answer" -eq "y"]
