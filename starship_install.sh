@@ -2,7 +2,7 @@
 #checking if NerdFont is installed
 echo "Nerd Font installed ?"
 read -p 'y/n' answer
-if ["$answer" -eq "n"]
+if [ "$answer" -eq "n" ]
 then
 #Installs nerdfonts
 echo "Installing NerdFont FiraCode"
@@ -15,7 +15,7 @@ sleep 5
 echo "Deleting temporary directory"
 rm -r ~/.fontstmp123456789
 echo "NerdFont FiraCode installation complete!"
-elif ["$answer" -eq "y"]
+elif [ "$answer" -eq "y" ]
 then
 echo "Continuing installation..."
 else
